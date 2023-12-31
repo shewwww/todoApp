@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap');
+
+body{
+  background-color: rgb(51, 51, 62);
+  color: white;
+  overflow: hidden;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  letter-spacing: -2px;
+  color:rgb(255, 255, 255);
+  margin-top: 5%;
+  
+}
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: aliceblue;
+  margin: 1px 0;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+
+  margin: 0;
+}
+
+small{
+  color: rgb(106, 76, 76);
+}
+
+input:focus{
+  outline: 1.5px solid rgb(45, 178, 190);
+}
+
+label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17.5px;
+  font-weight: 550;
+}
+
+.todo-wrapper{
+  background-color: rgb(52, 51, 51);
+  padding: 4%;
+  width: fit-content;
+  margin: 5% auto;
+  max-height: 100vh;
+  overflow-y: auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgb(73, 150, 173);
+}
+
+.todo-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom:  2px solid rgb(84, 84, 84);
+  padding-bottom: 6%;
+  margin-bottom: 3%;
+  gap: 10px;
+}
+
+.todo-input-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5.5px;
+}
+
+.todo-input-item input{
+  width: 500px;
+  height: 25px;
+  border-radius: 4px;
+
+}
+
+.primaryBtn{
+  background-color: rgb(2, 249, 118);
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15%;
+  padding: 10.5px;
+  width: 60px;
+  cursor: pointer;
+  
+}
+
+.primaryBtn:hover{
+  background-color: rgb(35, 152, 90);
+  color: rgb(25, 222, 170);
+}
+
+.secondaryBtn{
+  background-color: rgb(168, 166, 166);
+  color: rgb(59, 59, 59);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border: none;
+  margin-top: 3%;
+  padding: 10.5px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 4px 0 0;
+}
+
+.clearAll{
+  background-color: rgb(168, 166, 166);
+  color: rgb(59, 59, 59);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border: none;
+  margin-top: 1%;
+  padding: 10.5px;
+  width: fit-content;
+  cursor: pointer;
+  display: none;
+  border-radius: 8px;
+}
+
+.clearAll:hover{
+  background-color: rgb(83, 82, 82);
+  color: rgb(168, 168, 168);
+}
+
+.show{
+  display: block;
+}
+
+.active{
+  background-color: rgb(13, 225, 248);
+  color: rgb(0, 0, 0);
+}
+
+.todo-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list-item{
+  margin: 1% 0 0 0;
+  background-color: rgb(83, 82, 82);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0px 7px 15px rgba(13, 13, 13, 0.4);
+  border-radius: 8px;
+}
+
+.icon-area{
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.delete-icon{
+  color: rgb(254, 95, 95);
+}
+
+.edit-icon{
+  color: rgb(239, 239, 239);
+}
+
+.check-icon{
+  color: rgb(1, 255, 136);
+}

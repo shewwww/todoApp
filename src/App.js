@@ -136,11 +136,11 @@ function App() {
   //rendering part
   return (
     <div className="ToDoApp">
-      <h1>what do u want me to do?</h1>
       <div className="todo-wrapper">
         <div className="todo-input">
+          <h1>what do u want me to do?</h1>
           <div className="todo-input-item">
-            <label>Task: </label>
+            <label>To Do: </label>
             <input
               type="text"
               value={todo}

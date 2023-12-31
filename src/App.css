@@ -6,9 +6,9 @@ body{
   overflow: hidden;
 }
 
-h1{
-  text-align: center;
+.todo-input h1{
   font-family: 'Roboto', sans-serif;
+  font-weight: 55;
   font-size: 40px;
   letter-spacing: -2px;
   color:rgb(255, 255, 255);
@@ -18,17 +18,18 @@ h1{
 
 h3{
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 2.5px;
   color: aliceblue;
   margin: 1px 0;
+  font-weight: 400;
 }
 
 p{
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 350;
   font-family: 'Roboto', sans-serif;
-
+  letter-spacing: 1px;
   margin: 0;
 }
 
@@ -43,7 +44,7 @@ input:focus{
 label{
   font-family: 'Roboto', sans-serif;
   font-size: 17.5px;
-  font-weight: 550;
+  font-weight: 350;
 }
 
 .todo-wrapper{
@@ -64,7 +65,7 @@ label{
   justify-content: center;
   flex-wrap: wrap;
   border-bottom:  2px solid rgb(84, 84, 84);
-  padding-bottom: 6%;
+  padding-bottom: 10%;
   margin-bottom: 3%;
   gap: 10px;
 }
@@ -87,7 +88,7 @@ label{
   background-color: rgb(2, 249, 118);
   color: rgb(0, 0, 0);
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   border: none;
   border-radius: 8px;
   margin-top: 15%;
@@ -106,7 +107,7 @@ label{
   background-color: rgb(168, 166, 166);
   color: rgb(59, 59, 59);
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   border: none;
   margin-top: 3%;
   padding: 10.5px;
@@ -120,7 +121,7 @@ label{
   background-color: rgb(168, 166, 166);
   color: rgb(59, 59, 59);
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   border: none;
   margin-top: 1%;
   padding: 10.5px;

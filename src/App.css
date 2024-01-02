@@ -34,7 +34,9 @@ p{
 }
 
 small{
-  color: rgb(106, 76, 76);
+  font-family: 'Roboto', sans-serif;
+  color: rgb(239, 239, 239);
+  font-weight: 100;
 }
 
 input:focus{

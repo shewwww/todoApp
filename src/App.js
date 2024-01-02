@@ -47,7 +47,7 @@ function App() {
       removeTodo.splice(index, 1);
       setTodos(removeTodo);
       localStorage.setItem("todolist", JSON.stringify(removeTodo));
-     }
+    }
   };
 
   // Edit Tasks
@@ -76,7 +76,6 @@ function App() {
     }
   };
 
-
   //Delete Completed Tasks
   const handleDeleteCompleted = (index) => {
     let removeCompleted = [...compTasks];
@@ -89,6 +88,10 @@ function App() {
   const handleClearCompletedTasks = () => {
     setCompTasks([]);
     localStorage.removeItem("completeTask");
+    
+    // var result = window.confirm('Are you want to clear the completed tasks?');
+    //   if (result === true){
+    // };
   };
 
   //Mark tasks as completed
@@ -133,6 +136,7 @@ function App() {
     }
   }, []);
 
+  
   //rendering part
   return (
     <div className="ToDoApp">

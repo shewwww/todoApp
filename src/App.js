@@ -78,10 +78,13 @@ function App() {
 
   //Delete Completed Tasks
   const handleDeleteCompleted = (index) => {
-    let removeCompleted = [...compTasks];
-    removeCompleted.splice(index, 1);
-    setCompTasks(removeCompleted);
-    localStorage.setItem("completeTask", JSON.stringify(removeCompleted));
+    var result = window.confirm('Are you want to clear the completed tasks?');
+    if (result === true){
+      let removeCompleted = [...compTasks];
+      removeCompleted.splice(index, 1);
+      setCompTasks(removeCompleted);
+      localStorage.setItem("completeTask", JSON.stringify(removeCompleted));
+    }
   };
 
   //Delete all completed tasks

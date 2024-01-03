@@ -86,12 +86,11 @@ function App() {
 
   //Delete all completed tasks
   const handleClearCompletedTasks = () => {
-    setCompTasks([]);
-    localStorage.removeItem("completeTask");
-    
-    // var result = window.confirm('Are you want to clear the completed tasks?');
-    //   if (result === true){
-    // };
+    var result = window.confirm('Are you want to clear the completed tasks?');
+      if (result === true){
+        setCompTasks([]);
+        localStorage.removeItem("completeTask");
+    };
   };
 
   //Mark tasks as completed

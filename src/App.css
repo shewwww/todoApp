@@ -180,3 +180,10 @@ label{
 .check-icon{
   color: rgb(1, 255, 136);
 }
+
+.todo-list clearAll{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}

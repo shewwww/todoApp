@@ -173,7 +173,7 @@ function App() {
             </button>
           </div>
         </div>
-
+        
         <div className="btn-area">
           <button
             className={`secondaryBtn ${compScr === false && "active"}`}
@@ -184,10 +184,17 @@ function App() {
           <button
             className={`secondaryBtn ${compScr === true && "active"}`}
             onClick={() => setCompScr(true)}
-            
           >
             Completed
           </button>
+            <div className="clrBtn">
+              <button
+                  className={`clearAll ${compScr === true && "show"}`}
+                  onClick={handleClearCompletedTasks}
+                >
+                  Clear Completed{" "}
+                </button> 
+            </div>
             
         </div>
 
@@ -253,14 +260,14 @@ function App() {
                 </div>
               );
             })}
-        <div className="clrBtn">
-          <button
-              className={`clearAll ${compScr === true && "show"}`}
-              onClick={handleClearCompletedTasks}
-            >
-              Clear Completed{" "}
-            </button> 
-        </div>
+          {/* <div className="clrBtn">
+            <button
+                className={`clearAll ${compScr === true && "show"}`}
+                onClick={handleClearCompletedTasks}
+              >
+                Clear Completed{" "}
+              </button> 
+          </div> */}
 
           {compScr === true &&
             compTasks.map((item, index) => {

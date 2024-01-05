@@ -184,9 +184,11 @@ function App() {
           <button
             className={`secondaryBtn ${compScr === true && "active"}`}
             onClick={() => setCompScr(true)}
+            
           >
             Completed
           </button>
+            
         </div>
 
         <div className="todo-list">
@@ -251,13 +253,14 @@ function App() {
                 </div>
               );
             })}
-
+        <div className="clrBtn">
           <button
-            className={`clearAll ${compScr === true && "show"}`}
-            onClick={handleClearCompletedTasks}
-          >
-            Clear Completed{" "}
-          </button>
+              className={`clearAll ${compScr === true && "show"}`}
+              onClick={handleClearCompletedTasks}
+            >
+              Clear Completed{" "}
+            </button> 
+        </div>
 
           {compScr === true &&
             compTasks.map((item, index) => {

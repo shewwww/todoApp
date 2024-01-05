@@ -119,6 +119,11 @@ label{
   margin: 0 4px 0 0;
 }
 
+.secondaryBtn:hover{
+  background-color: rgb(2, 249, 118);
+  color: rgb(0, 0, 0);
+}
+
 .clearAll{
   background-color: rgb(168, 166, 166);
   color: rgb(59, 59, 59);
@@ -131,6 +136,9 @@ label{
   cursor: pointer;
   display: none;
   border-radius: 8px;
+/* 
+  display: flex;
+  flex-direction: row; */
 }
 
 .clearAll:hover{
@@ -161,6 +169,7 @@ label{
   padding: 20px 30px;
   box-shadow: 0px 7px 15px rgba(13, 13, 13, 0.4);
   border-radius: 8px;
+
 }
 
 .icon-area{
@@ -181,9 +190,10 @@ label{
   color: rgb(1, 255, 136);
 }
 
-.todo-list clearAll{
+.clrBtn{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: baseline;
+  align-content: stretch;
 }

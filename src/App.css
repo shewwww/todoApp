@@ -45,7 +45,7 @@ input:focus{
 
 label{
   font-family: 'Roboto', sans-serif;
-  font-size: 17.5px;
+  font-size: 16px;
   font-weight: 350;
 }
 
@@ -84,7 +84,7 @@ label{
 
 .todo-input-item input{
   width: 500px;
-  height: 25px;
+  height: 32px;
   border-radius: 4px;
 
 }
@@ -118,7 +118,7 @@ label{
   padding: 10.5px;
   width: fit-content;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   margin: 0 4px 0 0;
 }
 
@@ -145,8 +145,8 @@ label{
 }
 
 .clearAll:hover{
-  background-color: rgb(83, 82, 82);
-  color: rgb(168, 168, 168);
+  background-color: rgb(240, 81, 23);
+  color: black;
 }
 
 .show{
